@@ -1,0 +1,203 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "addrNewOffer",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "min_price",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "min_deposit",
+						"type": "uint256"
+					}
+				],
+				"name": "CreateNewOffer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_min_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_min_deposit",
+						"type": "uint256"
+					}
+				],
+				"name": "create_offer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get_offersId",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "idStructOffer",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "offer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "min_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "min_deposit",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "offersId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ownerFactory",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_comissionWithdraw",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawComission",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Factory.sol": "Factory"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Factory.sol": {
+			"keccak256": "0x2f450232e420ffdd9b633f4e0f7e0214155164a53cb52087a02d1093625d369e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7af91d6e554618045a152a74be507ab46b4324639cc624a8775f06d09452ec91",
+				"dweb:/ipfs/QmNaC6xBCjjK4ii8qGkYJ8F29HbhCwZvh6pDgqjw5zAziw"
+			]
+		},
+		"Offer.sol": {
+			"keccak256": "0xdd00ef715635056cef3a0966dd68253d8802fd3fda6fb9df9812997156ecd6e3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d8a843416a1867637a55995d80040cf823cff81085c2174fd2d6a281226c5c3a",
+				"dweb:/ipfs/Qmc3BG5292k8s9WsM2Ps4DvyoMC1Jqp7nBAgDrKKmt2Hye"
+			]
+		}
+	},
+	"version": 1
+}
